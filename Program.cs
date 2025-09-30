@@ -1,4 +1,5 @@
 using System.Text;
+using FullstackAssignment.Data;
 using FullstackAssignment.Models;
 using FullstackAssignment.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -62,5 +63,19 @@ app.UseCors("AllowAngular");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        Seed.Initialize(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred seeding the DB.");
+    }
+}
 
 app.Run();
