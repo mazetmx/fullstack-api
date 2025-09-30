@@ -13,4 +13,6 @@ public class ProductDto
     public int MinimumQuantity { get; set; }
 
     public decimal DiscountRange { get; set; }
+
+    public string ImageUrl { get; set; } = string.Empty;
 }

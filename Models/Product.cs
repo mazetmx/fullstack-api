@@ -18,4 +18,6 @@ public class Product
 
     [Range(1, 100)]
     public decimal DiscountRange { get; set; }
+
+    public string ImageUrl { get; set; } = string.Empty;
 }
