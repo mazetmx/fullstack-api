@@ -46,7 +46,8 @@ public class ProductsController(DataContext context) : Controller
             Category = dto.Category,
             Price = dto.Price,
             MinimumQuantity = dto.MinimumQuantity,
-            DiscountRange = dto.DiscountRange
+            DiscountRange = dto.DiscountRange,
+            ImageUrl = dto.ImageUrl
         };
 
         context.Products.Add(product);
@@ -71,6 +72,7 @@ public class ProductsController(DataContext context) : Controller
         product.Price = dto.Price ?? product.Price;
         product.MinimumQuantity = dto.MinimumQuantity ?? product.MinimumQuantity;
         product.DiscountRange = dto.DiscountRange ?? product.DiscountRange;
+        product.ImageUrl = dto.ImageUrl ?? product.ImageUrl;
 
         await context.SaveChangesAsync();
 
@@ -101,7 +103,8 @@ public class ProductsController(DataContext context) : Controller
             Category = p.Category,
             Price = p.Price,
             MinimumQuantity = p.MinimumQuantity,
-            DiscountRange = p.DiscountRange
+            DiscountRange = p.DiscountRange,
+            ImageUrl = p.ImageUrl
         };
     }
 }

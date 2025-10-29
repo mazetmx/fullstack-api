@@ -35,7 +35,7 @@ public class Seed
                     Price = 99.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 15,
-                    ImageUrl = "https://picsum.photos/300/200?random=1",
+                    ImageUrl = "https://picsum.photos/seed/bluetooth/300/200",
                 },
                 new Product
                 {
@@ -44,7 +44,7 @@ public class Seed
                     Price = 699.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 10,
-                    ImageUrl = "https://picsum.photos/300/200?random=2",
+                    ImageUrl = "https://picsum.photos/seed/phone/300/200",
                 },
                 new Product
                 {
@@ -53,7 +53,7 @@ public class Seed
                     Price = 29.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 0,
-                    ImageUrl = "https://picsum.photos/300/200?random=3",
+                    ImageUrl = "https://picsum.photos/seed/guide/300/200",
                 },
                 new Product
                 {
@@ -62,7 +62,7 @@ public class Seed
                     Price = 49.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 20,
-                    ImageUrl = "https://picsum.photos/300/200?random=4",
+                    ImageUrl = "https://picsum.photos/seed/coffee/300/200",
                 },
                 new Product
                 {
@@ -71,7 +71,7 @@ public class Seed
                     Price = 19.99m,
                     MinimumQuantity = 2,
                     DiscountRange = 5,
-                    ImageUrl = "https://picsum.photos/300/200?random=5",
+                    ImageUrl = "https://picsum.photos/seed/shirt/300/200",
                 },
                 new Product
                 {
@@ -80,7 +80,7 @@ public class Seed
                     Price = 34.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 0,
-                    ImageUrl = "https://picsum.photos/300/200?random=6",
+                    ImageUrl = "https://picsum.photos/seed/mat/300/200",
                 },
                 new Product
                 {
@@ -89,7 +89,7 @@ public class Seed
                     Price = 39.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 25,
-                    ImageUrl = "https://picsum.photos/300/200?random=7",
+                    ImageUrl = "https://picsum.photos/seed/stand/300/200",
                 },
                 new Product
                 {
@@ -98,7 +98,7 @@ public class Seed
                     Price = 24.99m,
                     MinimumQuantity = 1,
                     DiscountRange = 0,
-                    ImageUrl = "https://picsum.photos/300/200?random=8",
+                    ImageUrl = "https://picsum.photos/seed/lamp/300/200",
                 }
             };
 
